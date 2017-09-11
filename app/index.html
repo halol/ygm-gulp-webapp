@@ -5,7 +5,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Your Golf Manager</title>
-
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Muli:400,600,900" rel="stylesheet">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
 
@@ -29,11 +29,11 @@
     <header>
       <div class="container">
         <div class="row">
-          <div class="col-lg-6">
-            <img src="images/logo-mgm.svg" alt="">
-          </div>
-          <div class="col-lg-6 text-right">
-            <a href="#" class="btn btn-secondary">Early Access</a>
+          <div class="col-lg-12">
+            <div class="nav-flex">
+              <img src="images/logo-mgm.svg" alt="Your Golf Manager" class="logo">
+              <a href="#signup" class="btn btn-secondary cta-top-right">Early Access</a>
+            </div>
           </div>
         </div>
       </div>
@@ -46,13 +46,12 @@
               <div class="title">
                 <h1>Reach your potential</h1>
                 <p class="lead">The on-demand, digital Golf coach and manager</p>
-                <a href="" class="btn btn-primary cta">Check Eligibility</a>
+                <a href="#signup" class="btn btn-primary cta">Check Eligibility</a>
               </div>
-              <div class="images">
-                <img src="images/mockup-1.png" class="mockup" alt="Mobile App">
+              <img src="images/mockup-1.png" class="mockup" alt="Mobile App">
+              <div class="cover">
+                <img src="images/image-cover.jpg" alt="Your Golf Manager">
               </div>
-              
-              <img src="images/image-cover.jpg" class="cover" alt="Your Golf Manager">
             </div>
           </div>
         </div>
@@ -85,20 +84,36 @@
         </div>
       </div>
     </section>
-    <section class="sign-up">
+    <section class="sign-up" id="signup">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
             <div class="form-em">
               <h2 class="form-tagline">Sign up below for early access</h2>
               <p class="form-explanation">Be the first to see how Your Golf Manager can grow your game</p>
-              <form action="" class="form-inline">
-                  <div class="form-group form-gr">
-                    <input class="form-control mail-chimp-email" type="email" placeholder="Email here">
-                    <input class="btn btn-secondary" type="submit" value="Sign up">
-                    <!-- MailChimp -->
+              <!-- <form action="" class="form-inline">
+                <div class="form-group form-gr">
+                  <input class="form-control mail-chimp-email" type="email" placeholder="Email here">
+                  <input class="btn btn-secondary" type="submit" value="Sign up">
+                </div>
+              </form> -->
+
+              <!-- Begin MailChimp Signup Form -->
+              <div id="mc_embed_signup">
+                <form action="//yourgolfmanager.us16.list-manage.com/subscribe/post?u=9d7251cae354ff398a3a33b52&amp;id=6438f409a6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank" novalidate>
+                  <div id="mc_embed_signup_scroll" class="form-group form-gr">
+                    <input type="email" value="" name="EMAIL" class="mail-chimp-email required email form-control" id="mce-EMAIL" placeholder="Your email here">
+                    <input type="submit" value="Sign up" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-secondary">
                   </div>
+                  <div id="mce-responses" class="clear">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                  </div>
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9d7251cae354ff398a3a33b52_6438f409a6" tabindex="-1" value=""></div>
                 </form>
+              </div>
+                
+              <!--End mc_embed_signup-->
             </div>
             
           </div>
