@@ -1,0 +1,14 @@
+{
+  "name": "ygm-gulp-webapp",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "~4.0.0-alpha.6",
+    "modernizr": "~2.8.1",
+    "librebaskerville-googlefont": "*",
+    "muli-googlefont": "*"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^3.5.2"
+  }
+}

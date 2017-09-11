@@ -1,0 +1,135 @@
+// bower:scss
+@import "bower_components/bootstrap/scss/bootstrap.scss";
+// endbower
+$primary: #FF516B;
+$secondary: black;
+
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  font-family: 'Muli', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 27px;
+}
+header {
+  background: white;
+}
+
+section,
+header,
+footer {
+  padding: 32px 0;
+}
+ 
+
+.hero-content {
+  
+  position: relative;
+  outline: 1px solid red;
+  text-align: right;
+  .title {
+    position: absolute;
+    left: 0;
+    top: 64px;
+    width: 50%;
+    z-index: 100;
+    text-align: left;
+    > h1 {
+      margin-bottom: 16px;
+    }
+  }
+  .images {
+    //position: relative;
+    outline: 1px solid red;
+    height: 100%;
+    .mockup {
+      position: absolute;
+      right: 60px;
+      top: 32px;
+      width: 30%;
+      z-index: 100;
+    }
+  }
+  .cta {
+    position: absolute;
+    bottom: 0;
+    z-index: 200;
+  }
+  .cover {
+    opacity: .3;
+    width: 70%;
+  }
+}
+
+.benefits {
+  padding: 70px 0;
+}
+
+.card-image {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-title {
+  text-align: center;
+  font-size: 22px;
+  color: #000000;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.card-text {
+  text-align: center;
+}
+
+.btn {
+  text-transform: uppercase;
+  border-radius: 999px;
+  font-weight: 900;
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 3.27px;
+  &.btn-primary {
+    background-color: $primary;
+    border-color: $primary;
+    box-shadow: 0 4px 14px 0 rgba(255,81,107,0.25);
+  }
+  &.btn-secondary {
+    background-color: $secondary;
+    border-color: $secondary;
+    color: white;
+  }
+}
+
+h1 {
+  font-family: LibreBaskerville-Bold;
+  font-size: 64px;
+  color: #000000;
+  letter-spacing: 0.2px;
+  line-height: 61px;
+}
+
+
+.form-em {
+  background-color: #383EFF;
+  border-radius: 16px;
+  padding: 40px 0;
+}
+.form-tagline {
+  font-family: "Libre Baskerville";
+  font-size: 34px;
+  //font-weight: bold;
+  line-height: 42px;
+  text-align: center;
+  color: white;
+}
+.form-explanation {
+  text-align: center;
+  color: #D1D3FF;
+}
