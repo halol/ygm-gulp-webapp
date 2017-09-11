@@ -30,7 +30,7 @@ footer {
 .hero-content {
   
   position: relative;
-  outline: 1px solid red;
+  //outline: 1px solid red;
   text-align: right;
   .title {
     position: absolute;
@@ -40,12 +40,16 @@ footer {
     z-index: 100;
     text-align: left;
     > h1 {
-      margin-bottom: 16px;
+      margin-bottom: 32px;
     }
+  }
+  .lead {
+    max-width: 300px;
+    font-size: 1.2em;
   }
   .images {
     //position: relative;
-    outline: 1px solid red;
+    //outline: 1px solid red;
     height: 100%;
     .mockup {
       position: absolute;
@@ -56,9 +60,10 @@ footer {
     }
   }
   .cta {
-    position: absolute;
-    bottom: 0;
-    z-index: 200;
+    // position: absolute;
+    // bottom: -16px;
+    // left:0;
+    // z-index: 200;
   }
   .cover {
     opacity: .3;
@@ -88,6 +93,16 @@ footer {
   text-align: center;
 }
 
+.form-control {
+  border-radius: 999px;
+}
+.form-gr {
+  margin: 0 auto;
+  //outline: 1px solid red;
+}
+.mail-chimp-email {
+  margin-right: 16px;
+}
 .btn {
   text-transform: uppercase;
   border-radius: 999px;
@@ -95,15 +110,26 @@ footer {
   font-size: 14px;
   color: #FFFFFF;
   letter-spacing: 3.27px;
+  padding: 0.55rem 1rem;
+  text-align: center;
+  border-width: 2px;
   &.btn-primary {
     background-color: $primary;
     border-color: $primary;
     box-shadow: 0 4px 14px 0 rgba(255,81,107,0.25);
+    &:hover {
+      background: white;
+      color: $primary;
+    }
   }
   &.btn-secondary {
     background-color: $secondary;
     border-color: $secondary;
     color: white;
+    &:hover {
+      background: white;
+      color: black;
+    }
   }
 }
 
